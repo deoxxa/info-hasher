@@ -6,7 +6,6 @@
 #include <dirent.h>
 #include <iostream>
 
-#include <mongo/client/dbclient.h>
 #include <cppbencode/bencode.h>
 #include <polarssl/sha1.h>
 

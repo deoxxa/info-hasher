@@ -1,5 +1,4 @@
 #include <string>
-#include <mongo/client/dbclient.h>
 #include <kcpolydb.h>
 
 class info_hasher
