@@ -1,0 +1,30 @@
+info_hasher
+===========
+
+Overview
+--------
+
+Just a quick tool I wrote to consolidate an entirely unstructured collection of
+torrent files. It will scan (recursively) any directories given as arguments and
+put all the torrent data (stripped of the useless fluff) into a Kyoto Cabinet
+database called "database.kch". It's all very simple stuff, mostly just glue
+code.
+
+I doubt this will be useful as it is, but it may serve as a learning tool for
+someone wanting to learn about PolarSSL or Kyoto Cabinet... Maybe.
+
+Requirements
+------------
+
+* cppbencode - https://github.com/japeq/cppbencode
+* PolarSSL - http://polarssl.org/
+* Kyoto Cabinet - http://1978th.net/kyotocabinet/
+
+cppbencode is used to decode the torrent files, PolarSSL is used for its SHA1
+implementation to calculate the info_hash and Kyoto Cabinet is used to store the
+resulting data.
+
+Contact
+-------
+
+Normal methods of contact.
