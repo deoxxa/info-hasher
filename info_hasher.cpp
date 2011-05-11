@@ -111,7 +111,7 @@ void info_hasher::process_file(char* filenamein, size_t filesize)
     sprintf(hash_hex+(i*2), "%02x", hash_raw[i]);
   std::string hash(hash_hex, 40);
 
-  dbh.set(hash_hex, filedata_out);
+  dbh.set(hash.c_str(), filedata_out);
 
   std::cout << "Successfully read " << filenamein << std::endl;
 }
